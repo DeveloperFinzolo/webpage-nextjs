@@ -3,19 +3,17 @@ import Image from "next/image";
 import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const services = [
-  { label: "Financial Planning", href: "/services/financial-planning" },
-  { label: "Investment Management", href: "/services/investment-management" },
-  { label: "Retirement Planning", href: "/services/retirement-planning" },
-  { label: "Investment Analysis", href: "/services/investment-analysis" },
-  { label: "Insurance", href: "/services/insurance" },
+  { label: "Wealth management", href: "/services/wealth-management" },
+  { label: "Asset Management", href: "/services/asset-management" },
+  { label: "Long term financial investment Solutions", href: "/services/financial-solutions" },
 ];
 
 const explore = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Careers", href: "/careers" },
+  // { label: "Careers", href: "/careers" },
   { label: "FAQs", href: "/faqs" },
-  { label: "Partner", href: "/partner" },
+  // { label: "Partner", href: "/partner" },
 ];
 
 export default function Footer() {
