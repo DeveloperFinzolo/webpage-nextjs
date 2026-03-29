@@ -12,30 +12,28 @@ const navLinks = [
     label: "Services",
     href: "/services",
     dropdown: [
-      { label: "Financial Planning", href: "/services/financial-planning" },
-      { label: "Investment Management", href: "/services/investment-management" },
-      { label: "Retirement Planning", href: "/services/retirement-planning" },
-      { label: "Investment Analysis", href: "/services/investment-analysis" },
-      { label: "Insurance", href: "/services/insurance" },
+      { label: "Wealth management", href: "/services/wealth-management" },
+      { label: "Asset Management", href: "/services/asset-management" },
+      { label: "Long term financial investment Solutions", href: "/services/financial-solutions" },
     ],
   },
-  {
-    label: "Page",
-    href: "#",
-    dropdown: [
-      { label: "FAQs", href: "/faqs" },
-      { label: "Careers", href: "/careers" },
-      { label: "Partner", href: "/partner" },
-    ],
-  },
-  {
-    label: "News",
-    href: "#",
-    dropdown: [
-      { label: "Blog", href: "/blog" },
-      { label: "Press", href: "/press" },
-    ],
-  },
+  // {
+  //   label: "Page",
+  //   href: "#",
+  //   dropdown: [
+  //     { label: "FAQs", href: "/faqs" },
+  //     { label: "Careers", href: "/careers" },
+  //     { label: "Partner", href: "/partner" },
+  //   ],
+  // },
+  // {
+  //   label: "News",
+  //   href: "#",
+  //   dropdown: [
+  //     { label: "Blog", href: "/blog" },
+  //     { label: "Press", href: "/press" },
+  //   ],
+  // },
   { label: "Contact", href: "/contact" },
 ];
 

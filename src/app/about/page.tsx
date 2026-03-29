@@ -332,10 +332,9 @@ export default function AboutPage() {
                   </label>
                   <select className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-500 focus:outline-none focus:border-primary transition-colors bg-white">
                     <option value="">Select Service</option>
-                    <option>Financial Planning</option>
-                    <option>Investment Management</option>
-                    <option>Retirement Planning</option>
-                    <option>Insurance</option>
+                    <option>Wealth management</option>
+                    <option>Asset Management</option>
+                    <option>Long term financial investment services</option>
                   </select>
                 </div>
               </div>
