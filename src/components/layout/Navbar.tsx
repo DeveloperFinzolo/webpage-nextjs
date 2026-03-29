@@ -14,7 +14,7 @@ const navLinks = [
     dropdown: [
       { label: "Wealth management", href: "/services/wealth-management" },
       { label: "Asset Management", href: "/services/asset-management" },
-      { label: "Long term financial investment Solutions", href: "/services/financial-solutions" },
+      { label: "Financial investment solutions", href: "/services/financial-investment" },
     ],
   },
   // {

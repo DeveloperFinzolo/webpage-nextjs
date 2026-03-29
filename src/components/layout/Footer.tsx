@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "luc
 const services = [
   { label: "Wealth management", href: "/services/wealth-management" },
   { label: "Asset Management", href: "/services/asset-management" },
-  { label: "Long term financial investment Solutions", href: "/services/financial-solutions" },
+  { label: "Financial investment solutions", href: "/services/financial-investment" },
 ];
 
 const explore = [
@@ -123,10 +123,12 @@ export default function Footer() {
               <div>
                 <p className="text-xs text-gray-500 mb-2 md:text-right">Social Media</p>
                 <div className="flex gap-2">
-                  {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+                  {/* Facebook, Twitter, Linkedin,*/}
+                  {[Instagram].map((Icon, i) => (
                     <a
                       key={i}
-                      href="#"
+                      target="_blank"
+                      href="https://www.instagram.com/finzoloinv?utm_source=qr&igsh=MWkzMXN4cXAxNDIyaQ=="
                       className="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-primary transition-colors"
                     >
                       <Icon size={14} />

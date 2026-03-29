@@ -42,9 +42,9 @@ export const services: Service[] = [
         ],
     },
     {
-        slug: "long-term-investment",
+        slug: "financial-investment",
         icon: PiggyBank,
-        title: "Long-Term Financial Investment Services",
+        title: "Financial investment solutions",
         shortDesc: "Disciplined investing and strategic planning for sustainable wealth creation.",
         fullDesc: "At Finzolo, we believe true wealth is created through disciplined investing, strategic planning, and long-term vision — not short-term market speculation. Our Long-Term Financial Investment Management service focuses on helping investors grow and preserve wealth through structured investment strategies aligned with individual financial goals, risk tolerance, and market opportunities. We combine deep market research, portfolio discipline, and risk management to deliver consistent long-term value creation.",
         features: [
