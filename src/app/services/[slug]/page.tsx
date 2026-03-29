@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, ArrowLeft } from "lucide-react";
-import { services } from "../page";
+import { services } from "@/lib/services";
 
 interface Props {
   params: { slug: string };

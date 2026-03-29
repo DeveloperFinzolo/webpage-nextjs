@@ -1,85 +1,95 @@
 import Link from "next/link";
-import { TrendingUp, PiggyBank, Shield, BarChart3, ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
+import { services } from "@/lib/services";
+
+// export interface Service {
+//   slug: string;
+//   icon: LucideIcon;
+//   title: string;
+//   shortDesc: string;
+//   fullDesc: string;
+//   features: string[];
+// }
 
 // ─── DATA (swap with API/CMS call later) ───────────────────────────────────
-export const services = [
-  {
-    slug: "financial-planning",
-    icon: TrendingUp,
-    title: "Financial Planning",
-    shortDesc: "Build a comprehensive financial roadmap tailored to your life goals and risk tolerance.",
-    fullDesc:
-      "Our financial planning service helps you navigate life's financial complexities with clarity and confidence. We analyze your income, expenses, assets, and liabilities to create a personalized plan that aligns with your short-term needs and long-term aspirations.",
-    features: [
-      "Comprehensive financial assessment",
-      "Goal-based planning strategies",
-      "Cash flow management",
-      "Tax-efficient strategies",
-      "Regular progress reviews",
-    ],
-  },
-  {
-    slug: "investment-management",
-    icon: BarChart3,
-    title: "Investment Management",
-    shortDesc: "Grow your wealth through disciplined, evidence-based investment strategies.",
-    fullDesc:
-      "We manage your investment portfolio with a focus on long-term growth, diversification, and risk management. Our evidence-based approach ensures your money works as hard as you do.",
-    features: [
-      "Portfolio construction & diversification",
-      "Risk-adjusted returns",
-      "Ongoing portfolio rebalancing",
-      "ESG investing options",
-      "Performance reporting",
-    ],
-  },
-  {
-    slug: "retirement-planning",
-    icon: PiggyBank,
-    title: "Retirement Planning",
-    shortDesc: "Secure your future with a retirement strategy designed for the life you envision.",
-    fullDesc:
-      "Our retirement planning specialists help you define what retirement means to you and create a structured savings and distribution plan to get there — without running out of money.",
-    features: [
-      "Retirement income projections",
-      "401(k) & IRA optimization",
-      "Social Security strategy",
-      "Healthcare cost planning",
-      "Legacy & estate planning",
-    ],
-  },
-  {
-    slug: "investment-analysis",
-    icon: TrendingUp,
-    title: "Investment Analysis",
-    shortDesc: "Data-driven insights to make smarter investment decisions with confidence.",
-    fullDesc:
-      "We provide in-depth research and analysis of investment opportunities, helping you understand market dynamics, evaluate risk, and make informed decisions backed by solid data.",
-    features: [
-      "Market research & analysis",
-      "Fundamental & technical review",
-      "Sector & industry insights",
-      "Risk assessment reports",
-      "Custom investment reports",
-    ],
-  },
-  {
-    slug: "insurance",
-    icon: Shield,
-    title: "Insurance",
-    shortDesc: "Protect everything you've built with comprehensive coverage tailored to your needs.",
-    fullDesc:
-      "We evaluate your existing coverage and recommend insurance strategies that protect your income, assets, and family — ensuring you're never underinsured when it matters most.",
-    features: [
-      "Life insurance analysis",
-      "Disability income protection",
-      "Long-term care planning",
-      "Business insurance review",
-      "Annuity solutions",
-    ],
-  },
-];
+// export const services: Service[] = [
+//     {
+//       slug: "financial-planning",
+//       icon: TrendingUp,
+//       title: "Financial Planning",
+//       shortDesc: "Build a comprehensive financial roadmap tailored to your life goals and risk tolerance.",
+//       fullDesc:
+//         "Our financial planning service helps you navigate life's financial complexities with clarity and confidence. We analyze your income, expenses, assets, and liabilities to create a personalized plan that aligns with your short-term needs and long-term aspirations.",
+//       features: [
+//         "Comprehensive financial assessment",
+//         "Goal-based planning strategies",
+//         "Cash flow management",
+//         "Tax-efficient strategies",
+//         "Regular progress reviews",
+//       ],
+//     },
+//     {
+//       slug: "investment-management",
+//       icon: BarChart3,
+//       title: "Investment Management",
+//       shortDesc: "Grow your wealth through disciplined, evidence-based investment strategies.",
+//       fullDesc:
+//         "We manage your investment portfolio with a focus on long-term growth, diversification, and risk management. Our evidence-based approach ensures your money works as hard as you do.",
+//       features: [
+//         "Portfolio construction & diversification",
+//         "Risk-adjusted returns",
+//         "Ongoing portfolio rebalancing",
+//         "ESG investing options",
+//         "Performance reporting",
+//       ],
+//     },
+//     {
+//       slug: "retirement-planning",
+//       icon: PiggyBank,
+//       title: "Retirement Planning",
+//       shortDesc: "Secure your future with a retirement strategy designed for the life you envision.",
+//       fullDesc:
+//         "Our retirement planning specialists help you define what retirement means to you and create a structured savings and distribution plan to get there — without running out of money.",
+//       features: [
+//         "Retirement income projections",
+//         "401(k) & IRA optimization",
+//         "Social Security strategy",
+//         "Healthcare cost planning",
+//         "Legacy & estate planning",
+//       ],
+//     },
+//     {
+//       slug: "investment-analysis",
+//       icon: TrendingUp,
+//       title: "Investment Analysis",
+//       shortDesc: "Data-driven insights to make smarter investment decisions with confidence.",
+//       fullDesc:
+//         "We provide in-depth research and analysis of investment opportunities, helping you understand market dynamics, evaluate risk, and make informed decisions backed by solid data.",
+//       features: [
+//         "Market research & analysis",
+//         "Fundamental & technical review",
+//         "Sector & industry insights",
+//         "Risk assessment reports",
+//         "Custom investment reports",
+//       ],
+//     },
+//     {
+//       slug: "insurance",
+//       icon: Shield,
+//       title: "Insurance",
+//       shortDesc: "Protect everything you've built with comprehensive coverage tailored to your needs.",
+//       fullDesc:
+//         "We evaluate your existing coverage and recommend insurance strategies that protect your income, assets, and family — ensuring you're never underinsured when it matters most.",
+//       features: [
+//         "Life insurance analysis",
+//         "Disability income protection",
+//         "Long-term care planning",
+//         "Business insurance review",
+//         "Annuity solutions",
+//       ],
+//     },
+//   ];
 
 export default function ServicesPage() {
   return (
