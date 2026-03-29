@@ -9,43 +9,42 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+187-5840-8547",
-    href: "tel:+18758408547",
+    value: "+91 70940 55110",
+    href: "tel:+917094055110",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Jl. Soekamo-hatta",
+    value: "Chennai",
     href: "#",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "finance@mail.com",
-    href: "mailto:finance@mail.com",
+    value: "developerfinzolo@gmail.com",
+    href: "mailto:developerfinzolo@gmail.com",
   },
   {
     icon: Clock,
     label: "Open Hour",
-    value: "Mon - Sat, 08:00 - 16:00",
+    value: "Mon - Sat, 10:00 - 07:00",
     href: "#",
   },
 ];
 
 const journeyStages = [
-  "Early-to-Mid-Career",
-  "Mid-Career",
-  "Thinking About Retirement",
-  "Recently Retired",
+  "Private Sector Employee",
+  "Self-Employed / Business Owner",
+  "Government Employee",
+  "Unemployed",
   "Retired",
 ];
 
 const interests = [
   "Investment Planning",
-  "Retirement Planning",
-  "Health & Insurance Planning",
-  "Tax Planning & Preparation",
-  "Other",
+  "Wealth Management",
+  "Asset Management",
+  "Financial Solutions",
 ];
 
 export default function ContactPage() {
@@ -72,6 +71,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    console.log("Form Data:", formData);
     setSubmitted(true);
   };
 
@@ -83,7 +83,7 @@ export default function ContactPage() {
           { label: "Home", href: "/" },
           { label: "Contact" },
         ]}
-        imageSrc="https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=800&h=400&fit=crop"
+        imageSrc="/Contactpage.jpg"
         imageAlt="Contact Us"
       />
 
@@ -98,8 +98,7 @@ export default function ContactPage() {
                 <span className="text-primary">Get</span> in touch
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed mb-8">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                Whether you have a question about our services, need financial advice, or want to schedule a consultation — our team is ready to assist..
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -195,7 +194,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <label className="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">
-                        Telephone
+                        Whatsapp
                       </label>
                       <input
                         type="tel"
@@ -213,7 +212,7 @@ export default function ContactPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">
-                        At what stage are you in your financial journey?{" "}
+                        Which of the following best describes your current work status?{" "}
                         <span className="text-red-500">*</span>
                       </label>
                       <div className="space-y-2">
@@ -259,7 +258,7 @@ export default function ContactPage() {
                   {/* Interests */}
                   <div>
                     <label className="block text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">
-                      What are you interested in learning more about?
+                      What services do you need?
                     </label>
                     <div className="space-y-2">
                       {interests.map((interest) => (
@@ -295,7 +294,7 @@ export default function ContactPage() {
                         className="accent-primary w-4 h-4 mt-0.5 shrink-0"
                       />
                       <span className="text-sm text-gray-600">
-                        I agree to receive communications from financ advisor
+                        I agree to receive communications from financial solutions provider. I understand that my information will be used in accordance with the privacy policy and I can opt out at any time.
                       </span>
                     </label>
                   </div>
@@ -311,7 +310,7 @@ export default function ContactPage() {
       </section>
 
       {/* ── MAP placeholder ── */}
-      <section className="h-64 bg-gray-200 relative overflow-hidden">
+      {/* <section className="h-64 bg-gray-200 relative overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&h=400&fit=crop"
           alt="Map"
@@ -324,7 +323,7 @@ export default function ContactPage() {
             <p className="font-semibold text-dark text-sm">Jl. Soekamo-hatta KM 03</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
