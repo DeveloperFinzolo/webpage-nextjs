@@ -334,7 +334,7 @@ export default function AboutPage() {
                     <option value="">Select Service</option>
                     <option>Wealth management</option>
                     <option>Asset Management</option>
-                    <option>Long term financial investment services</option>
+                    <option>Financial investment solutions</option>
                   </select>
                 </div>
               </div>
