@@ -47,14 +47,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="Finzolo InvestTech" width={32} height={32} />
+            <Image src="/finzolo_logo_white.svg" alt="Finzolo InvestTech" width={150} height={32} />
             {/* <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
               <span className="text-white font-bold text-lg font-display">F</span>
             </div> */}
-            <span className="font-display text-xl font-semibold text-primary">
+            {/* <span className="font-display text-xl font-semibold text-primary">
               Finzolo InvestTech
-              {/* <span className="text-primary">™</span> */}
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop Nav */}

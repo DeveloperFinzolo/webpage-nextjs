@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360">
+
+  <!-- Background: white (swapped from black) -->
+  <rect width="1280" height="360" fill="#1a1a1a"/>
+
+  <g fill="#0D9169">
+
+    <!-- Left parallelogram bar — tall, italic slant, wider -->
+    <polygon points="80,65  142,65  120,271  58,271"/>
+
+    <!-- Right parallelogram bar — same height, slightly narrower, same slant, close gap -->
+    <polygon points="157,65  210,65  188,271  135,271"/>
+
+    <!-- Circle — sits flush to right of bars, vertically centered -->
+    <circle cx="250" cy="180" r="38"/>
+
+    <!-- Wordmark -->
+    <text
+      x="308"
+      y="256"
+      font-family="'Arial Black', 'Haettenschweiler', 'Impact', sans-serif"
+      font-size="172"
+      font-weight="900"
+      font-style="italic"
+      letter-spacing="-2"
+    >Finzoloinv</text>
+
+  </g>
+
+</svg>

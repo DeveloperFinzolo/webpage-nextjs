@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, TrendingUp, PiggyBank, Shield, BarChart3 } from "lucide-react";
+import { ArrowRight, TrendingUp, PiggyBank, Shield, BarChart3, AlignEndHorizontalIcon } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 
 const stats = [
@@ -54,17 +54,33 @@ const team = [
 ];
 
 const services = [
-  { icon: TrendingUp, title: "Financial Planning", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet tincidunt venenatis." },
-  { icon: PiggyBank, title: "Retirement Planning", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet tincidunt venenatis." },
-  { icon: Shield, title: "Insurance", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet tincidunt venenatis." },
-  { icon: BarChart3, title: "Investment Management", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet tincidunt venenatis." },
+  {
+    icon: TrendingUp,
+    title: "Quantitative Trading",
+    desc: "Utilizing advanced mathematical models and high-frequency, technology-driven strategies to identify and profit from arbitrage opportunities.",
+  },
+  {
+    icon: AlignEndHorizontalIcon,
+    title: "Analytics & Management Solutions",
+    desc: "Integrated, innovative and data-driven investment analytics powering smarter decisions for institutional investors globally.",
+  },
+  {
+    icon: Shield,
+    title: "Risk Management",
+    desc: "Employing sophisticated, data-driven approaches to manage risk while maintaining a high volume of daily transactions.",
+  },
+  {
+    icon: BarChart3,
+    title: "Market Making",
+    desc: "Continuously offering buy and sell quotes to ensure liquidity in equities, bonds, and options — facilitating seamless trades for institutions.",
+  },
 ];
 
 export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="Guide Financial Planning"
+        title="About Finzolo InvestTech"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "About" },
@@ -112,19 +128,18 @@ export default function AboutPage() {
               </div>
             </div>
 
+
             <div>
               <span className="section-label">ABOUT US</span>
               <h2 className="section-title mt-2 mb-6">
-                We <span className="text-primary">Help</span> financial Advisors that exclusively serve
+                We Help You Grow, Protect, and Manage Your <span className="text-primary"> Financial Future</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet
-                tincidunt venenatis facilisis lorem, tristique fusce elit nec
-                vulputate dignissim.
+                We focus on three core pillars: wealth management, financial solutions, and asset management.
+                Founded in 2026, we help clients navigate complexity with clear strategies – from portfolio construction and risk management to customized financial planning.
               </p>
-              <p className="text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit vulputate
-                dignissim nec fusce dapibus.
+              <p className="text-gray-600 leading-relaxed mb-8">
+                No noise. No shortcuts. Just disciplined, results-driven management of what matters most: your financial future.
               </p>
             </div>
           </div>
@@ -139,13 +154,12 @@ export default function AboutPage() {
               <span className="section-label">OUR JOURNEY</span>
               <h2 className="section-title mt-2 mb-6">Our History</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet
-                tincidunt venenatis facilisis lorem, tristique fusce elit nec
-                vulputate dignissim imperdiet magna vivamus.
+                Finzolo InvestTech – founded in 2026 – is a modern wealth and asset management firm built on a simple belief: disciplined, data‑driven investing should be accessible to everyone, 
+                from first‑time retail investors to high‑net‑worth individuals.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet
-                tincidunt venenatis facilisis lorem tristique.
+                We combine deep investment expertise with a proprietary technology‑enabled advisory framework.
+                The result is a hybrid model—human insight layered with intelligent analytics—that delivers structured wealth strategies, personalized portfolio management, and long‑term clarity in a world of short‑term noise.
               </p>
             </div>
             <div className="relative h-72">
@@ -159,14 +173,14 @@ export default function AboutPage() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 border-t border-gray-200 pt-12">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 border-t border-gray-200 pt-12">
             {stats.map((stat, i) => (
               <div key={i} className="text-center border-r border-gray-200 last:border-0">
                 <p className="font-display text-4xl font-bold text-dark mb-1">{stat.value}</p>
                 <p className="text-gray-500 text-xs uppercase tracking-widest">{stat.label}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -182,7 +196,7 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-white">
-              Meet Financial Professional Advisor
+              Meet Our Financial Professionals
             </h2>
           </div>
           <Link href="/contact" className="btn-primary bg-dark hover:bg-black flex items-center gap-2 shrink-0">
@@ -200,8 +214,7 @@ export default function AboutPage() {
                 What <span className="text-accent">We</span> Do
               </h2>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet
-                tincidunt venenatis facilisis lorem tristique vulputate.
+                We provide institutional-grade wealth and asset management for individuals, families, and businesses — driven by data, discipline, and long-term thinking.
               </p>
               <Link
                 href="/services"
@@ -227,7 +240,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── TEAM ── */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="section-label">OUR PEOPLE</span>
@@ -253,10 +266,10 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── APPOINTMENT FORM ── */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -344,7 +357,7 @@ export default function AboutPage() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
