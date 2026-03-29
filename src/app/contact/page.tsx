@@ -33,10 +33,10 @@ const contactInfo = [
 ];
 
 const journeyStages = [
-  "Private Sector Employee",
-  "Self-Employed / Business Owner",
-  "Government Employee",
-  "Unemployed",
+  "Business Owner",
+  "Individuals",
+  "Families",
+  "Entrepreneurs",
   "Retired",
 ];
 
