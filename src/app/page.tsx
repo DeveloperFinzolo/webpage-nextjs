@@ -96,7 +96,7 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&h=900&fit=crop"
+            src="/Heros01.jpg"
             alt="Hero"
             fill
             className="object-cover"
@@ -107,9 +107,9 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-xl text-white">
-            <p className="section-label text-accent mb-3">WHY CHOOSE FINANC</p>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
-              Get a clear path to your financial goals.
+            <p className="section-label text-accent mb-3">Welcome to Finzolo</p>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+              Building Sustainable Wealth Through Strategic Long-Term Investing.
             </h1>
             <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed">
               Our Wealth Advising team can help you build lasting wealth and
@@ -130,7 +130,7 @@ export default function HomePage() {
         </div>
 
         {/* Floating card */}
-        <div className="absolute bottom-10 right-8 hidden lg:block bg-white p-5 shadow-2xl max-w-xs z-10">
+        {/* <div className="absolute bottom-10 right-8 hidden lg:block bg-white p-5 shadow-2xl max-w-xs z-10">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 bg-primary/10 rounded flex items-center justify-center">
               <Shield size={20} className="text-primary" />
@@ -143,7 +143,7 @@ export default function HomePage() {
           <p className="text-xs text-gray-500 leading-relaxed">
             Lorem ipsum dolor sit amet consectetur adipiscing elit.
           </p>
-        </div>
+        </div> */}
       </section>
 
       {/* ── PLANNING OBJECTIVE BANNER ── */}

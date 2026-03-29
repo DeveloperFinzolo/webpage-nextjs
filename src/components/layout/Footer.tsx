@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const services = [
@@ -23,17 +24,19 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
-          <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-                <span className="text-white font-bold text-lg font-display">F</span>
-              </div>
-              <span className="font-display text-xl font-semibold">
-                Financ<span className="text-primary">™</span>
+          <div className="flex flex-col gap-2">
+            <Link href="/" className="flex items-center gap-2">
+              <Image src="/logo.png" alt="Finzolo InvestTech" width={32} height={32} />
+              {/* <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
+              <span className="text-white font-bold text-lg font-display">F</span>
+            </div> */}
+              <span className="font-display text-xl font-semibold text-primary">
+                Finzolo InvestTech
+                {/* <span className="text-primary">™</span> */}
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit hac porta tempus eros mollis facilisis vestibulum.
+              Building Sustainable Wealth Through Strategic Long-Term Investing.
             </p>
           </div>
 
@@ -75,7 +78,7 @@ export default function Footer() {
               Let&apos;s Talk!
             </h4>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit hac facilisis vestibulum.
+              our investment team is ready to assist.
             </p>
             <Link href="/contact" className="btn-accent inline-block text-xs">
               CONTACT US
@@ -94,7 +97,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-white text-xs font-semibold">Location</p>
-                  <p className="text-xs">Jl. Soekamo-hatta KM 03</p>
+                  <p className="text-xs">Chennai</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
@@ -102,8 +105,8 @@ export default function Footer() {
                   <Phone size={14} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-white text-xs font-semibold">Phone</p>
-                  <p className="text-xs">+187-5840-8547</p>
+                  <p className="text-white text-xs font-semibold">Whatsapp</p>
+                  <p className="text-xs">+91 70940 55110</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
@@ -112,7 +115,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-white text-xs font-semibold">Email</p>
-                  <p className="text-xs">finance@mail.com</p>
+                  <p className="text-xs">developerfinzolo@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -138,7 +141,7 @@ export default function Footer() {
 
           <div className="flex flex-col md:flex-row justify-between items-center mt-6 gap-3">
             <p className="text-gray-500 text-xs">
-              2024, All Rights Designed by Financ
+              2026, All Rights Designed by Financ
             </p>
             <div className="flex gap-4">
               <Link href="/privacy" className="text-gray-500 text-xs hover:text-white transition-colors">
