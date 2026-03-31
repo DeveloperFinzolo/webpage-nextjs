@@ -15,7 +15,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Chennai",
+    value: "Adyar Chennai 600020",
     href: "#",
   },
   {
@@ -27,7 +27,7 @@ const contactInfo = [
   {
     icon: Clock,
     label: "Open Hour",
-    value: "Mon - Sat, 10:00 - 07:00",
+    value: "Mon - Fri, 10:00 - 06:00",
     href: "#",
   },
 ];

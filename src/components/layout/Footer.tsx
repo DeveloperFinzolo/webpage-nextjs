@@ -12,7 +12,7 @@ const explore = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   // { label: "Careers", href: "/careers" },
-  { label: "FAQs", href: "/faqs" },
+  // { label: "FAQs", href: "/faqs" },
   // { label: "Partner", href: "/partner" },
 ];
 
@@ -94,7 +94,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-white text-xs font-semibold">Location</p>
-                  <p className="text-xs">Chennai</p>
+                  <p className="text-xs">Adyar Chennai 600020</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
@@ -140,7 +140,7 @@ export default function Footer() {
 
           <div className="flex flex-col md:flex-row justify-between items-center mt-6 gap-3">
             <p className="text-gray-500 text-xs">
-              2026, All Rights Designed by Financ
+              2026, All Rights Designed by Finzolo Invest
             </p>
             <div className="flex gap-4">
               <Link href="/privacy" className="text-gray-500 text-xs hover:text-white transition-colors">

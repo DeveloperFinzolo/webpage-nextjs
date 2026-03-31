@@ -154,7 +154,7 @@ export default function AboutPage() {
               <span className="section-label">OUR JOURNEY</span>
               <h2 className="section-title mt-2 mb-6">Our History</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Finzolo InvestTech – founded in 2026 – is a modern wealth and asset management firm built on a simple belief: disciplined, data‑driven investing should be accessible to everyone, 
+                Finzolo InvestTech – founded in 2026 – is a modern wealth and asset management firm built on a simple belief: disciplined, data‑driven investing should be accessible to everyone,
                 from first‑time retail investors to high‑net‑worth individuals.
               </p>
               <p className="text-gray-600 leading-relaxed">
@@ -181,6 +181,92 @@ export default function AboutPage() {
               </div>
             ))}
           </div> */}
+        </div>
+      </section>
+
+      {/* Vision */}
+      <section className="py-10 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+          <span className="section-label">OUR VISION</span>
+          <h2 className="section-title mt-2 mb-6">Our Vision</h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            To become a trusted global partner in wealth and asset management—enabling individuals
+            and institutions to achieve financial independence through intelligent, responsible investing.
+          </p>
+
+        </div>
+      </section>
+
+
+      {/* Mission + Structure */}
+      <section className="py-10 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+          <span className="section-label">OUR MISSION</span>
+          <h2 className="section-title mt-2 mb-6">Our Mission</h2>
+
+          <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
+            To deliver integrated, innovative investment solutions that combine human insight with modern
+            technology, empowering investors to make informed decisions with confidence.
+          </p>
+
+          {/* Finzolo Structure */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+
+            <div className="p-6 border rounded-xl hover:shadow-md transition">
+              <h3 className="font-semibold mb-2">Private Wealth Management</h3>
+            </div>
+
+            <div className="p-6 border rounded-xl hover:shadow-md transition">
+              <h3 className="font-semibold mb-2">Asset Management</h3>
+            </div>
+
+            <div className="p-6 border rounded-xl hover:shadow-md transition">
+              <h3 className="font-semibold mb-2">
+                Investment Banking & Corporate Finance
+              </h3>
+            </div>
+
+            <div className="p-6 border rounded-xl hover:shadow-md transition">
+              <h3 className="font-semibold mb-2">Corporate Financial Solutions</h3>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* Vision, Mission & Values */}
+      <section className="py-5 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Values */}
+          <div className="mb-10">
+            <span className="section-label">OUR VALUES</span>
+            <h2 className="section-title mt-2 mb-6">Our Core Values</h2>
+            <ul className="space-y-3 text-gray-600">
+              <li>• Integrity and transparency – in every recommendation, every conversation.</li>
+              <li>• Long-term focus – we prioritize sustainable wealth creation over speculation.</li>
+              <li>• Client-first mindset – your goals shape our strategies.</li>
+              <li>• Continuous innovation – we constantly refine how we combine expertise with technology.</li>
+              <li>• Discipline and risk awareness – responsible investing is the only investing.</li>
+            </ul>
+          </div>
+
+          {/* Why Finzolo */}
+          <div className="mb-10">
+            <span className="section-label">WHY FINZOLO</span>
+            <h2 className="section-title mt-2 mb-6">Why Finzolo?</h2>
+            <p className="text-gray-600 leading-relaxed max-w-4xl">
+              In a short time, we’ve grown into a trusted partner for a diverse client base—from young professionals
+              starting their investment journey to seasoned HNIs seeking sophisticated portfolio structuring and
+              capital preservation. Our foundation is trust; our method is discipline; our commitment is to build
+              financial confidence that lasts for generations.
+            </p>
+          </div>
+
         </div>
       </section>
 
